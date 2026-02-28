@@ -1,0 +1,14 @@
+{
+  "name": "dreamitjob-bot-worker",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "grammy": "^1.24.0",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.100.0"
+  }
+}
