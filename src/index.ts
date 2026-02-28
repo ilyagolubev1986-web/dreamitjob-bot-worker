@@ -78,7 +78,7 @@ const app = new Hono<{ Bindings: Env }>();
 
 app.post('/webhook', async (c) => {
   const bot = new Bot('8775261515:AAH8yhvUGtg4JR-xib7UNZwsb0x7c4z4Vf0');
-  const ADMIN_ID = parseInt(c.env.ADMIN_ID);
+  const ADMIN_ID = c.env.ADMIN_ID;
   const update = await c.req.json();
 
   bot.command('start', async (ctx) => {
