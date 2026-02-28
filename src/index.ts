@@ -77,7 +77,7 @@ function validateText(text: string, fieldName: string): { valid: boolean; error?
 const app = new Hono<{ Bindings: Env }>();
 
 app.post('/webhook', async (c) => {
-  const bot = new Bot(c.env.TELEGRAM_TOKEN);
+  const bot = new Bot('8775261515:AAH8yhvUGtg4JR-xib7UNZwsb0x7c4z4Vf0');
   const ADMIN_ID = parseInt(c.env.ADMIN_ID);
   const update = await c.req.json();
 
